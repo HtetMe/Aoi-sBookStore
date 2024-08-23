@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aoi's Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: #00CCCC;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+.contact-section {
+    background-color: white;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    color: #00CCCC;
+}
+
+.contact-info, .contact-form {
+    margin: 2em 0;
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #00CCCC;
+}
+
+.contact-info p, .contact-form form label {
+    text-align: left;
+}
+
+.contact-info a {
+    color: #00CCCC;
+    text-decoration: none;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form label {
+    margin-top: 1em;
+}
+
+.contact-form form input, .contact-form form textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form form button {
+    margin-top: 1em;
+    padding: 0.7em;
+    background-color: #00CCCC;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #009999;
+}
+
+footer {
+    background-color: #00CCCC;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+       <div class="container">
+            <h1>Aoi's Bookstore</h1>
+            <p>Aoi's da best</p>
+            <nav>
+                 <ul>
+                <li><a href="Aoi's Bookstore.html">Home</a></li>
+                <input type="text" style="color: black; border-radius: 10px;" placeholder="Search...">
+                <li><a href="books.html">Books</a></li>
+                <li><a href="BookCharity.html">Book Charity</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="livediscussion.html">Live Discussion</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Whether you have a question about our books, need assistance, or just want to share your love for reading, feel free to get in touch with us.</p>
+            
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:htetmemeh@gmail.com">htetmemeh@gmail.com</a></p>
+                <p>Phone: <a href="tel:+09975214485">09975214485</a></p>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+      <footer>
+        <p>&copy; 2024 Aoi's Bookstore. All rights reserved.| Designed by - Aoi_HmmH</p>
+    </footer>
+</body>
+</html>

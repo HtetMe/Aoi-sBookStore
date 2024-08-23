@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Aoi's Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #00CCCC;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        header p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #00CCCC;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #00CCCC;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #00CCCC;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .offer, .feature, .discussion {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 50px;
+        }
+
+        .feature img, .discussion img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            background-color: #00CCCC;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #008b8b;
+        }
+
+        .books-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .book-item {
+            flex: 1 0 30%;
+            box-sizing: border-box;
+        }
+        .offer img{
+            padding: 20px;
+            width:15%;
+            height: 400px;
+            border-radius: 40px;   }
+        .offer li{
+            list-style-type: none;
+        }
+        .feature img{
+            padding: 20px;
+            width: 15%;
+            height: 400px;
+            border-radius: 40px;
+        }
+        .feature li{
+            list-style-type: none;
+        }
+        .discussion li{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aoi's Bookstore</h1>
+        <p>Aoi's da best</p>
+        <nav>
+            <ul>
+                <li><a href="Aoi's Bookstore.html">Home</a></li>
+                <input type="text" style="color: black; border-radius: 10px;" placeholder="Search...">
+                <li><a href="books.html">Books</a></li>
+                <li><a href="BookCharity.html">Book Charity</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="livediscussion.html">Live Discussion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="special-offers" class="special-offers">
+            <h2 style="text-align: center;">Special Offers</h2>
+            <div class="offer">
+                <img src="offer1.jpg" alt="Special Offer 1"><img src="offer2.jpeg" alt="Special Offer 2"><img src="offer3.jpeg" alt="Special Offer 3"><img src="offer4.jpeg" alt="Special Offer 4">
+                <p>Exclusive discounts on bestsellers</p>
+                <li><a href="books.html" class="btn">Shop Now</a></li>
+            </div>
+            <div class="offer">
+                <img src="offer5.jpeg" alt="Special Offer 5"><img src="offer6.jpeg" alt="Special Offer 6"><img src="offer7.jpeg" alt="Special Offer 7"><img src="offer8.jpeg" alt="Special Offer 8">
+                <p>Buy 2 Get 1 Free on Select Titles</p>
+                <li><a href="books.html" class="btn">Shop Now</a></li>
+            </div>
+        </section>
+
+        <section id="new-arrivals" class="new-arrivals">
+            <h2 style="text-align: center;">New Arrivals</h2>
+            <div class="offer">
+                <img src="new1.jpeg" alt="New Arrival 1"><img src="new2.jpeg" alt="New Arrival 2"><img src="new3.jpg" alt="New Arrival 3"><img src="new4.jpeg" alt="New Arrival 4">
+                <p>Latest Releases from Top Authors</p>
+                <li><a href="books.html" class="btn">Explore</a></li>
+            </div>
+            <div class="offer">
+                <img src="new5.jpg" alt="New Arrival 5"><img src="new6.jpeg" alt="New Arrival 6"><img src="new7.jpg" alt="New Arrival 7"><img src="new8.jpeg" alt="New Arrival 8">
+                <p>Fresh Reads for Every Taste</p>
+                <li><a href="books.html" class="btn">Explore</a></li>
+            </div>
+        </section>
+
+        <section id="main-features" class="main-features">
+            <h2 style="text-align: center;">Main Features</h2>
+            <div class="feature">
+                <img src="feature1.jpeg" alt="Feature 1"><img src="feature2.jpeg" alt="Feature 2"><img src="feature3.jpg" alt="Feature 3"><img src="feature4.jpeg" alt="Feature 4">
+                <p>Curated Collections for Book Lovers</p>
+                <li><a href="books.html" class="btn">Discover More</a></li>
+            </div>
+            <div class="feature">
+                <img src="feature5.jpeg" alt="Feature 5"><img src="feature6.jpeg" alt="Feature "><img src="feature7.jpeg" alt="Feature 7"><img src="feature8.jpeg" alt="Feature 8">
+                <p>Author Spotlight: Meet Your Favorite Writers</p>
+                <li><a href="books.html" class="btn">Discover More</a></li>
+            </div>
+        </section>
+
+        <section id="live-discussion" class="live-discussion">
+            <h2 style="text-align: center;">Live Discussion & Refreshments</h2>
+            <div class="discussion">
+                <img src="discussion1.jpg" alt="Live Discussion">
+                <p>Join our next live discussion with fellow book enthusiasts</p>
+                <li><a href="livediscussion.html" class="btn">Join Now</a></li>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aoi's Bookstore. All rights reserved.| Designed by - Aoi_HmmH</p>
+    </footer>
+</body>
+</html>

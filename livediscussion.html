@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aoi's Bookstore - Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #00CCCC;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+nav {
+    background-color: #00CCCC;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+}
+
+ h2 {
+    color: #00CCCC;
+}
+
+button {
+    background-color: #00CCCC;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0099A8;
+}
+
+.highlight {
+    color: #00CCCC;
+    font-weight: bold;
+}
+
+.discussion-group, .review {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ask-question, .review textarea {
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="text"], textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#question-list p, #review-list li {
+    margin-top: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.rating .star:hover,
+.rating .star.selected {
+    color: #00CCCC;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aoi's Bookstore</h1>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="Aoi's Bookstore.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="BookCharity.html">Book Charity</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="livediscussion.html">Live Discussion</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="live-discussions">
+            <h2>Live Discussion Groups</h2>
+            <p>Join Our Community of Book Lovers!</p>
+            <p>Engage in lively discussions with fellow book enthusiasts. Share your thoughts, insights, and recommendations.</p>
+            <div class="discussion-group">
+                <h3>Upcoming Live Discussions:</h3>
+                <ul>
+                    <li>Book Club: Monthly Picks - Every first Friday at 7 PM</li>
+                    <li>Author Q&A - Every second Wednesday at 6 PM</li>
+                    <li>Genre Deep Dives - Every third Monday at 8 PM</li>
+                </ul>
+                <button onclick="joinDiscussion()">Join Discussion</button>
+            </div>
+            <div class="ask-question">
+                <h3>Ask Any Question:</h3>
+                <input type="text" id="question" placeholder="Type your question here...">
+                <button onclick="submitQuestion()">Submit</button>
+               
+                <div id="question-list"></div>
+            </div>
+        </section>
+
+        <section id="review-forum">
+            <h2>Review Forum</h2>
+            <p>Share Your Reviews and Read Others!</p>
+            <div class="review">
+                <h3>Recent Reviews:</h3>
+                <ul id="review-list">
+                    <li>
+                        "The Midnight Library" by Matt Haig - ⭐⭐⭐⭐⭐
+                        <p>"A beautifully written exploration of regret and hope. Highly recommended!"</p>
+                    </li>
+                    <li>
+                        "Where the Crawdads Sing" by Delia Owens - ⭐⭐⭐⭐
+                        <p>"A compelling story with vivid descriptions of the marshlands. A bit slow-paced at times."</p>
+                    </li>
+                </ul>
+                <h3>Post a Review:</h3>
+                <input type="text" id="book" placeholder="Book Title">
+                <textarea id="review" placeholder="Write your review..."></textarea>
+                <div class="rating">
+                    <span>Rate this book:</span>
+                    <span class="star" onclick="setRating(1)">&#9733;</span>
+                    <span class="star" onclick="setRating(2)">&#9733;</span>
+                    <span class="star" onclick="setRating(3)">&#9733;</span>
+                    <span class="star" onclick="setRating(4)">&#9733;</span>
+                    <span class="star" onclick="setRating(5)">&#9733;</span>
+                </div>
+                <button onclick="postReview()">Post Review</button>
+                 </div>
+        </section>
+    </main>
+      <footer>
+        <p>&copy; 2024 Aoi's Bookstore. All rights reserved.| Designed by - Aoi_HmmH</p>
+    </footer>
+
+    <script>
+        let selectedRating = 0;
+
+function joinDiscussion() {
+    alert("Thank you for joining the discussion! We'll inform you later.");
+}
+
+function submitQuestion() {
+    const question = document.getElementById("question").value;
+    if (question) {
+        const questionList = document.getElementById("question-list");
+        const newQuestion = document.createElement("p");
+        newQuestion.innerHTML = ` ${question}`;
+        questionList.appendChild(newQuestion);
+        document.getElementById("question").value = "";
+        alert(`Your question "${question}" has been submitted!`);
+    } else {
+        alert("Please enter a question.");
+    }
+}
+
+function setRating(rating) {
+    selectedRating = rating;
+    const stars = document.querySelectorAll(".star");
+    stars.forEach((star, index) => {
+        if (index < rating) {
+            star.classList.add("selected");
+        } else {
+            star.classList.remove("selected");
+        }
+    });
+}
+
+function postReview() {
+    const book = document.getElementById("book").value;
+    const review = document.getElementById("review").value;
+    if (book && review && selectedRating > 0) {
+        const reviewList = document.getElementById("review-list");
+        const newReview = document.createElement("li");
+        newReview.innerHTML = `"${book}" - ${'&#9733;'.repeat(selectedRating)}<p>${review}</p>`;
+        reviewList.appendChild(newReview);
+        document.getElementById("book").value = "";
+        document.getElementById("review").value = "";
+        selectedRating = 0;
+        setRating(0);
+        alert(`Your review for "${book}" has been posted!`);
+    } else {
+        alert("Please fill out the book title, review, and select a rating.");
+    }
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service - Aoi's Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        /* Existing styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #00CCCC;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #00CCCC;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .collapsible {
+            background-color: white;
+            color: #00CCCC;
+            cursor: pointer;
+            padding: 15px;
+            margin-top: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+        }
+
+        .active, .collapsible:hover {
+            background-color: #00CCCC;
+            color: white;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00CCCC;
+        }
+
+        footer {
+            background-color: #00CCCC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .service, .other-services article, .membership-packages .package, .membership-packages .custom-package {
+            margin-bottom: 20px;
+        }
+
+        .membership-packages .package {
+            border: 1px solid #00CCCC;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .membership-packages .custom-package {
+            border: 2px dashed #00CCCC;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aoi's Bookstore Customer Service</h1>
+        <p>Welcome to Aoi's Bookstore Customer Service! We're here to ensure you have the best experience possible with our wide range of books and services.</p>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="Aoi's Bookstore.html">Home</a></li>
+                <input type="text" style="color: black; border-radius: 10px;" placeholder="Search...">
+                <li><a href="books.html">Books</a></li>
+                <li><a href="BookCharity.html">Book Charity</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="livediscussion.html">Live Discussion</a></li>
+        </ul>
+    </nav>
+    <!-- Collapsible Sections -->
+    <button class="collapsible">Gift Cards✓</button>
+    <div class="content">
+        <p>Looking for the perfect gift for a book lover? Our gift cards are a great choice! Available in various denominations, our gift cards can be used to purchase any item in our bookstore. Give the gift of reading today!</p>
+    </div>
+
+    <button class="collapsible">Review Forums✓</button>
+    <div class="content">
+        <p>Share your thoughts and read reviews from fellow book enthusiasts in our Review Forums. Engage with our community and discover new titles.</p>
+    </div>
+
+    <button class="collapsible">Live Discussion Groups✓</button>
+    <div class="content">
+        <p>Join our live discussion groups to talk about your favorite books, authors, and genres. Check our schedule for upcoming discussion topics and times.</p>
+    </div>
+
+    <section class="other-services">
+        <h2>Other Services</h2>
+        
+        <article>
+            <h3>Box of Refreshments</h3>
+            <p>Enhance your reading experience with our curated box of refreshments. Enjoy gourmet snacks and beverages that pair perfectly with your next book.</p>
+        </article>
+        
+        <article>
+            <h3>Members’ Book of the Month</h3>
+            <p>As a member of Aoi's Bookstore, you’ll receive our exclusive Book of the Month. Each month’s selection is sure to delight and inspire.</p>
+        </article>
+        
+        <article>
+            <h3>Merchandise</h3>
+            <p>Show off your love for reading with our bookstore merchandise. From tote bags to bookmarks, our high-quality items make great gifts for yourself or fellow book lovers.</p>
+        </article>
+        
+        <article>
+            <h3>Charity Book Donation</h3>
+            <p>Support literacy and give back to the community through our Charity Book Donation program. Donate books you’ve loved to those in need and help spread the joy of reading.</p>
+        </article>
+    </section>
+    
+    <section class="membership-packages">
+        <h2>Membership Packages</h2>
+        
+        <div class="package">
+            <h3>Basic</h3>
+            <ul>
+                <li>Book of the month</li>
+                <li>Access to one review forum and discussion group</li>
+                <li>Bookmark and drinks mug</li>
+                <li>Refreshments x 1 – box of coffee or tea</li>
+            </ul>
+        </div>
+        
+        <div class="package">
+            <h3>Intermediate</h3>
+            <ul>
+                <li>Book of the month plus one own choice book</li>
+                <li>Access to two review forums and discussion groups</li>
+                <li>Bookmark and book bag</li>
+                <li>Refreshments x 2 – box of coffee, hot chocolate or tea</li>
+            </ul>
+        </div>
+        
+        <div class="package">
+            <h3>Advanced</h3>
+            <ul>
+                <li>Book of the month and three own choice books</li>
+                <li>Open access to all forums and discussion groups</li>
+                <li>Choice of three items of merchandise</li>
+                <li>Refreshments x 3 – box of coffee, hot chocolate or tea</li>
+            </ul>
+        </div>
+        
+        <div class="custom-package">
+            <h3>Custom Packages</h3>
+            <p>Custom packages are available for specific genres, additional books, and merchandise each month. Clients must contact the company to arrange any custom packages.</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+      <footer>
+        <p>&copy; 2024 Aoi's Bookstore. All rights reserved.| Designed by - Aoi_HmmH</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var coll = document.getElementsByClassName("collapsible");
+
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
